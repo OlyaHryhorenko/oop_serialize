@@ -19,14 +19,7 @@ class XMLSerializer implements Serialize {
 	}
 
 	public function serialize() {
-		$options = array(
-			XML_SERIALIZER_OPTION_INDENT               => '    ',
-			XML_SERIALIZER_OPTION_LINEBREAKS           => "\n",
-			XML_SERIALIZER_OPTION_DEFAULT_TAG          => 'unnamedItem',
-			XML_SERIALIZER_OPTION_SCALAR_AS_ATTRIBUTES => false,
-			XML_SERIALIZER_OPTION_ATTRIBUTES_KEY       => '_attributes',
-			XML_SERIALIZER_OPTION_CONTENT_KEY          => '_content'
-		);
+		$options = array();
 		$serializer = new XML_Serializer($options);
 		$serializer->serialize($this->object);
 		return $serializer->getSerializedData();

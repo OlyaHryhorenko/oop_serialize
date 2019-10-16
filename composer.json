@@ -15,7 +15,7 @@
   "require": {
     "php": ">=7.3",
     "pear/xml_serializer": "^0.22.0",
-    "symfony/serializer": "^4.3"
+    "symfony/yaml": "^4.3"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0",

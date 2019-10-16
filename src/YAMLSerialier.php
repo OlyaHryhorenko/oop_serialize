@@ -8,7 +8,7 @@
 
 namespace App;
 
-use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Yaml\Yaml;
 
 
 class YAMLSerialier implements Serialize {
@@ -20,8 +20,7 @@ class YAMLSerialier implements Serialize {
 	}
 
 	public function serialize() {
-		$serialize = new Serializer();
-		return $serialize->serialize($this->object, 'yaml');
+		return Yaml::dump($this->object);
 	}
 
 }

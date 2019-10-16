@@ -14,6 +14,16 @@ use App\JSONSerializer;
 use App\XMLSerializer;
 use App\YAMLSerialier;
 
+/**
+ * test array
+ */
 $test = (object) array('this'=> 'that', 'whom'=> 'who');
-$new_serialize = new Serializer(new App\YAMLSerialier( $test));
-print_r($new_serialize->serialize());
+
+$new_yaml_serialize = new Serializer(new YAMLSerialier( $test));
+echo 'YAML string '.$new_yaml_serialize->serialize();
+
+$new_xml_serialize = new Serializer(new XMLSerializer($test));
+echo 'XML serialize '.$new_xml_serialize->serialize();
+
+$new_json_serialize = new Serializer(new JSONSerializer($test));
+echo 'JSON serialize '.$new_json_serialize->serialize();
