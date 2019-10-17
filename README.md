@@ -3,12 +3,18 @@ Serializer
 
 The utility to serialize objects to XML, JSON, YAML format
 
+Installation
+------------
+
+```bash
+$ composer create-project olya-hryhorenko/oop_serialize
+```
+
 Usage
 ------------
 
-For creating new project based on this template just execute the following command
-
-```bash
+Example of implementing library 
+```php
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
