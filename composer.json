@@ -1,13 +1,13 @@
 {
-  "name": "greeflas/default-project",
-  "description": "This is a default structure for PHP projects.",
-  "keywords": ["project", "template", "structure", "skeleton", "phpunit"],
+  "name": "OlyaHryhorenko/oop_serialize",
+  "description": "This is a object serializer written in OOP way.",
+  "keywords": ["project"],
   "type": "project",
   "license": "BSD-3-Clause",
   "authors": [
     {
-      "name": "Vladimir Kuprienko",
-      "email": "vldmr.kuprienko@gmail.com",
+      "name": "Olya Hryhorenko",
+      "email": "olhahryhorencko@gmail.com",
       "role": "Maintainer"
     }
   ],
