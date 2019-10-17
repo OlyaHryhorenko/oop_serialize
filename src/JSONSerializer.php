@@ -9,7 +9,7 @@
 namespace App;
 
 
-class JSONSerializer  implements Serialize {
+class JSONSerializer  implements SerializeInterface {
 
 	public $object;
 

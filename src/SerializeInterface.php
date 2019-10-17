@@ -9,6 +9,6 @@
 namespace App;
 
 
-interface Serialize {
+interface SerializeInterface {
 	public function serialize();
 }

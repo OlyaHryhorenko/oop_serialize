@@ -11,7 +11,7 @@ namespace App;
 use Symfony\Component\Yaml\Yaml;
 
 
-class YAMLSerialier implements Serialize {
+class YAMLSerializer implements SerializeInterface {
 
 	public $object;
 

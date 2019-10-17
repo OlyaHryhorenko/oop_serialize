@@ -10,7 +10,7 @@ namespace App;
 use XML_Serializer;
 
 
-class XMLSerializer implements Serialize {
+class XMLSerializer implements SerializeInterface {
 
 	public $object;
 
